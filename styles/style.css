@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img.wholeback {
+  z-index: -1;
+  position: absolute;
+  right: -20vw;
+  top: -10vw;
+}
+
+header nav ul {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul li a.active {
+  color: #c97800;
+}
+
+main {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+main div.intro {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+}
+
+main div.intro h1 {
+  color: blue;
+}
+
+main div.intro div.circle {
+  background-color: #4a3aff;
+  opacity: 20%;
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 20vw;
+  left: -10vw;
+}
+
+main div.headpic {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+main div.headpic img {
+  margin: 1rem;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 20vh;
+  right: 18vw;
+}
+
+main div.headpic div.box1 {
+  padding: 0.2rem 0.5rem;
+  background-color: #ffea79;
+}
+
+main div.headpic div.box2 {
+  background-color: #b6ba00;
+  z-index: -1;
+}
+
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 1rem;
+}
+
+main section.table table {
+  border-collapse: collapse;
+}
+
+main section.table table tr {
+  border-bottom: 2px solid gray;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main section.table table tr td {
+  padding: 1rem;
+}
+
+main section.table table tr:hover {
+  background-color: aqua;
+}
+
+main section.headpic2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+}
+
+main section.headpic2 div.pic {
+  margin: 1rem;
+  position: relative;
+}
+
+main section.headpic2 div.pic img {
+  width: 30vw;
+  height: 42vw;
+}
+
+main section.headpic2 div.pic div.picbox2 {
+  background-color: #887ef3;
+  width: 30vw;
+  height: 42vw;
+  z-index: -1;
+  position: absolute;
+  top: 3vw;
+  left: 4vw;
+}
+
+main section.contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  margin: 1rem;
+}
+
+main section.contact h2 {
+  text-align: center;
+}
+
+main div.line {
+  background-color: gray;
+  width: 2px;
+}
+
+main section.contacttable {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 550px;
+          flex: 2 1 550px;
+  margin: 1rem;
+}
+
+main section.contacttable form {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.contacttable form div label {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+main section.contacttable form div input {
+  background-color: aqua;
+  color: black;
+  font-size: 1.25rem;
+  padding: 0.25rem 1rem;
+  border: none;
+  width: 50vw;
+  margin: 0.5rem;
+}
+
+main section.contacttable form div textarea {
+  background-color: aqua;
+  color: black;
+  font-size: 1.25rem;
+  padding: 0.25rem 1rem;
+  border: none;
+  width: 50vw;
+  margin: 0.5rem;
+}
+
+main section.contacttable form div textarea {
+  vertical-align: top;
+}
+
+main section.contacttable form div button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  background-color: #b4b1b1;
+  border-radius: 5%;
+}
+
+footer {
+  margin: 1rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 15%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer ul li img {
+  width: 3vw;
+  height: 3vw;
+}
+
+@media screen and (max-width: 1000px) {
+  img.wholeback {
+    opacity: 50%;
+    width: 60%;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+  }
+  header nav ul li {
+    padding: 0.5rem;
+    border-bottom: 1.5px solid gray;
+  }
+  header nav ul li a {
+    font-size: 1.2rem;
+  }
+  main div.headpic img {
+    position: static;
+  }
+  main section.headpic2 div.pic img {
+    width: 50vw;
+    height: 68vw;
+  }
+  main section.headpic2 div.pic div.picbox2 {
+    width: 50vw;
+    height: 68vw;
+  }
+  main div.line {
+    width: 90vw;
+    height: 2px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
